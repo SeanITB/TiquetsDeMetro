@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 
 @dataclass
-class Ticket:
-    type: int
-    zone: int
+class shopping_cart:
+    shopping_list: list
