@@ -11,3 +11,13 @@ class user_interface:
             outMsg += f"{key} --> {value}\n"
         return outMsg
 
+    def get_proces_state(self) -> int:
+        return self.proces_state
+
+    def increment_proces_state(self) -> int:
+        self.proces_state += 1
+        return self.proces_state #toDo: ns si lo puedo hacer en la misma
+
+    def decrement_proces_state(self) -> int:
+        self.proces_state -= 1
+        return self.proces_state

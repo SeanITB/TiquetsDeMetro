@@ -18,8 +18,8 @@ class ticket_machin:
         }
 
     #With the previus selection of the user, the machine will give the ticket name.
-    def give_ticket_type(self, imput_user) -> str:
-        return ""
+    def give_ticket_type(self, imp_user) -> str:
+        return self.tickets_names[imp_user]
 
     #Now, the same with: chose_ticket_tipe, but with the zone number.
 
@@ -29,3 +29,6 @@ class ticket_machin:
 
     def get_tickets(self):
         return self.tickets_names
+
+    def get_stop_machine(self) -> str:
+        return self.stop_machine
